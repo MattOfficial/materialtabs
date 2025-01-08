@@ -1,0 +1,239 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Company 1",
+      "address": "Address 1",
+      "city": "City 1",
+      "country": "Country 1",
+      "email": "help@company1.com"
+    },
+    {
+      "id": 2,
+      "name": "Company 2",
+      "address": "123 Main St",
+      "city": "New York",
+      "country": "USA",
+      "email": "contact@company2.com"
+    },
+    {
+      "id": 3,
+      "name": "Company 3",
+      "address": "456 Oak Road",
+      "city": "London",
+      "country": "UK",
+      "email": "info@company3.com"
+    },
+    {
+      "id": 4,
+      "name": "Company 4",
+      "address": "789 Maple Ave",
+      "city": "Toronto",
+      "country": "Canada",
+      "email": "support@company4.com"
+    },
+    {
+      "id": 5,
+      "name": "Company 5",
+      "address": "321 Pine Street",
+      "city": "Sydney",
+      "country": "Australia",
+      "email": "hello@company5.com"
+    },
+    {
+      "id": 6,
+      "name": "Company 6",
+      "address": "741 Cedar Lane",
+      "city": "Berlin",
+      "country": "Germany",
+      "email": "service@company6.com"
+    },
+    {
+      "id": 7,
+      "name": "Company 7",
+      "address": "852 Elm Court",
+      "city": "Paris",
+      "country": "France",
+      "email": "bonjour@company7.com"
+    },
+    {
+      "id": 8,
+      "name": "Company 8",
+      "address": "963 Birch Way",
+      "city": "Tokyo",
+      "country": "Japan",
+      "email": "inquiry@company8.com"
+    },
+    {
+      "id": 9,
+      "name": "Company 9",
+      "address": "147 Willow Drive",
+      "city": "Singapore",
+      "country": "Singapore",
+      "email": "sales@company9.com"
+    },
+    {
+      "id": 10,
+      "name": "Company 10",
+      "address": "258 Spruce Blvd",
+      "city": "Dubai",
+      "country": "UAE",
+      "email": "info@company10.com"
+    },
+    {
+      "id": 11,
+      "name": "Company 11",
+      "address": "369 Aspen Circle",
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "email": "help@company11.com"
+    }
+  ],
+  "consultancies": [
+    {
+      "id": 1,
+      "name": "Consultancy 1",
+      "address": "Address 1",
+      "city": "City 1",
+      "country": "Country 1",
+      "email": "contact@consultancy1.com"
+    },
+    {
+      "id": 2,
+      "name": "Consultancy 2",
+      "address": "123 Consulting Ave",
+      "city": "Chicago",
+      "country": "USA",
+      "email": "info@consultancy2.com"
+    },
+    {
+      "id": 3,
+      "name": "Consultancy 3",
+      "address": "456 Advisory Road",
+      "city": "Manchester",
+      "country": "UK",
+      "email": "hello@consultancy3.com"
+    },
+    {
+      "id": 4,
+      "name": "Consultancy 4",
+      "address": "789 Strategy Street",
+      "city": "Vancouver",
+      "country": "Canada",
+      "email": "support@consultancy4.com"
+    },
+    {
+      "id": 5,
+      "name": "Consultancy 5",
+      "address": "321 Business Blvd",
+      "city": "Melbourne",
+      "country": "Australia",
+      "email": "help@consultancy5.com"
+    },
+    {
+      "id": 6,
+      "name": "Consultancy 6",
+      "address": "741 Solutions Lane",
+      "city": "Munich",
+      "country": "Germany",
+      "email": "service@consultancy6.com"
+    },
+    {
+      "id": 7,
+      "name": "Consultancy 7",
+      "address": "852 Expert Way",
+      "city": "Lyon",
+      "country": "France",
+      "email": "contact@consultancy7.com"
+    },
+    {
+      "id": 8,
+      "name": "Consultancy 8",
+      "address": "963 Advisory Path",
+      "city": "Osaka",
+      "country": "Japan",
+      "email": "info@consultancy8.com"
+    },
+    {
+      "id": 9,
+      "name": "Consultancy 9",
+      "address": "147 Consulting Drive",
+      "city": "Hong Kong",
+      "country": "China",
+      "email": "support@consultancy9.com"
+    },
+    {
+      "id": 10,
+      "name": "Consultancy 10",
+      "address": "258 Strategy Road",
+      "city": "Abu Dhabi",
+      "country": "UAE",
+      "email": "hello@consultancy10.com"
+    },
+    {
+      "id": 11,
+      "name": "Consultancy 11",
+      "address": "369 Business Circle",
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "email": "info@consultancy11.com"
+    }
+  ],
+  "consultants": [
+    {
+      "id": 1,
+      "name": "Consultant 1",
+      "email": "consultant@consultancy.com"
+    },
+    {
+      "id": 2,
+      "name": "Consultant 2",
+      "email": "consultant2@consultancy.com"
+    },
+    {
+      "id": 3,
+      "name": "Consultant 3",
+      "email": "consultant3@consultancy.com"
+    },
+    {
+      "id": 4,
+      "name": "Consultant 4",
+      "email": "consultant4@consultancy.com"
+    },
+    {
+      "id": 5,
+      "name": "Consultant 5",
+      "email": "consultant5@consultancy.com"
+    },
+    {
+      "id": 6,
+      "name": "Consultant 6",
+      "email": "consultant6@consultancy.com"
+    },
+    {
+      "id": 7,
+      "name": "Consultant 7",
+      "email": "consultant7@consultancy.com"
+    },
+    {
+      "id": 8,
+      "name": "Consultant 8",
+      "email": "consultant8@consultancy.com"
+    },
+    {
+      "id": 9,
+      "name": "Consultant 9",
+      "email": "consultant9@consultancy.com"
+    },
+    {
+      "id": 10,
+      "name": "Consultant 10",
+      "email": "consultant10@consultancy.com"
+    },
+    {
+      "id": 11,
+      "name": "Consultant 11",
+      "email": "consultant11@consultancy.com"
+    }
+  ]
+}
