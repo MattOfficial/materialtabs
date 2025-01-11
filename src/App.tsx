@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import "./App.css";
 import useStore from "./store/store";
+import DataTable from "./components/DataTable";
+import { Box } from "@mui/material";
 
 function App() {
   const {
@@ -21,7 +23,6 @@ function App() {
           fetchConsultants(),
         ]);
       } catch (error) {
-        // Handle any errors that occur during fetching
         console.error("Error fetching data:", error);
       }
     };
@@ -29,41 +30,30 @@ function App() {
     fetchAllData();
   }, [fetchCompanies, fetchConsultancies, fetchConsultants]);
 
+  console.log(companies, consultancies, consultants);
+
   return (
     <>
-      <div>
+      <Box sx={{ justifyContent: "center", width: "100%" }}>
         <h1>Companies:</h1>
-        {companies.map((company) => (
-          <div key={company.id}>
-            <p>{company.name}</p>
-            <p>{company.address}</p>
-            <p>{company.city}</p>
-            <p>{company.country}</p>
-            <p>{company.email}</p>
-          </div>
-        ))}
+        {companies.length > 0 ? <DataTable rows={companies} /> : "Loading..."}
         <br />
         <br />
         <h1>Consultancies:</h1>
-        {consultancies.map((consultancy) => (
-          <div key={consultancy.id}>
-            <p>{consultancy.name}</p>
-            <p>{consultancy.address}</p>
-            <p>{consultancy.city}</p>
-            <p>{consultancy.country}</p>
-            <p>{consultancy.email}</p>
-          </div>
-        ))}
+        {consultancies.length > 0 ? (
+          <DataTable rows={consultancies} />
+        ) : (
+          "Loading..."
+        )}
         <br />
         <br />
         <h1>Consultants:</h1>
-        {consultants.map((consultant) => (
-          <div key={consultant.id}>
-            <p>{consultant.name}</p>
-            <p>{consultant.email}</p>
-          </div>
-        ))}
-      </div>
+        {consultants.length > 0 ? (
+          <DataTable rows={consultants} />
+        ) : (
+          "Loading..."
+        )}
+      </Box>
     </>
   );
 }

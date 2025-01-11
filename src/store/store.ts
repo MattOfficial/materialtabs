@@ -27,9 +27,9 @@ const ConsultantSchema = z.object({
   email: z.string().email(),
 });
 
-type Company = z.infer<typeof CompanySchema>;
-type Consultancy = z.infer<typeof ConsultancySchema>;
-type Consultant = z.infer<typeof ConsultantSchema>;
+export type Company = z.infer<typeof CompanySchema>;
+export type Consultancy = z.infer<typeof ConsultancySchema>;
+export type Consultant = z.infer<typeof ConsultantSchema>;
 
 interface StoreState {
   companies: Company[];
@@ -47,21 +47,18 @@ const useStore = create<StoreState>((set) => ({
   fetchCompanies: async () => {
     const response = await fetch(`${BASE_URL}/companies`);
     const data = await response.json();
-    console.log("companies", data);
     const parsedData = CompanySchema.array().parse(data);
     set({ companies: parsedData });
   },
   fetchConsultancies: async () => {
     const response = await fetch(`${BASE_URL}/consultancies`);
     const data = await response.json();
-    console.log("consultancies", data);
     const parsedData = ConsultancySchema.array().parse(data);
     set({ consultancies: parsedData });
   },
   fetchConsultants: async () => {
     const response = await fetch(`${BASE_URL}/consultants`);
     const data = await response.json();
-    console.log("consultants", data);
     const parsedData = ConsultantSchema.array().parse(data);
     set({ consultants: parsedData });
   },
