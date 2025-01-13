@@ -59,7 +59,7 @@ export default function DataTable<
   };
 
   return (
-    <Paper sx={{ height: 400, width: 1000 }}>
+    <Paper sx={{ height: 400, width: "auto" }}>
       <TableContainer>
         <Table stickyHeader>
           <TableHead>

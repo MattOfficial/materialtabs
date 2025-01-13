@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import "./App.css";
+import { Box } from "@mui/material";
 import useStore from "./store/store";
 import DataTable from "./components/DataTable";
-import { Box } from "@mui/material";
+import { TabsPage } from "./components/TabsPage";
+import "./App.css";
 
 function App() {
   const {
@@ -30,29 +31,109 @@ function App() {
     fetchAllData();
   }, [fetchCompanies, fetchConsultancies, fetchConsultants]);
 
-  console.log(companies, consultancies, consultants);
-
-  return (
-    <>
-      <Box sx={{ justifyContent: "center", width: "100%" }}>
-        <h1>Companies:</h1>
-        {companies.length > 0 ? <DataTable rows={companies} /> : "Loading..."}
-        <br />
-        <br />
-        <h1>Consultancies:</h1>
-        {consultancies.length > 0 ? (
+  const tabs = [
+    {
+      label: "Companies",
+      content:
+        companies.length > 0 ? <DataTable rows={companies} /> : "Loading...",
+    },
+    {
+      label: "Consultancies",
+      content:
+        consultancies.length > 0 ? (
           <DataTable rows={consultancies} />
         ) : (
           "Loading..."
-        )}
-        <br />
-        <br />
-        <h1>Consultants:</h1>
-        {consultants.length > 0 ? (
+        ),
+    },
+    {
+      label: "Consultants",
+      content:
+        consultants.length > 0 ? (
           <DataTable rows={consultants} />
         ) : (
           "Loading..."
-        )}
+        ),
+    },
+    {
+      label: "Companies",
+      content:
+        companies.length > 0 ? <DataTable rows={companies} /> : "Loading...",
+    },
+    {
+      label: "Consultancies",
+      content:
+        consultancies.length > 0 ? (
+          <DataTable rows={consultancies} />
+        ) : (
+          "Loading..."
+        ),
+    },
+    {
+      label: "Consultants",
+      content:
+        consultants.length > 0 ? (
+          <DataTable rows={consultants} />
+        ) : (
+          "Loading..."
+        ),
+    },
+    {
+      label: "Companies",
+      content:
+        companies.length > 0 ? <DataTable rows={companies} /> : "Loading...",
+    },
+    {
+      label: "Consultancies",
+      content:
+        consultancies.length > 0 ? (
+          <DataTable rows={consultancies} />
+        ) : (
+          "Loading..."
+        ),
+    },
+    {
+      label: "Consultants",
+      content:
+        consultants.length > 0 ? (
+          <DataTable rows={consultants} />
+        ) : (
+          "Loading..."
+        ),
+    },
+    {
+      label: "Companies",
+      content:
+        companies.length > 0 ? <DataTable rows={companies} /> : "Loading...",
+    },
+    {
+      label: "Consultancies",
+      content:
+        consultancies.length > 0 ? (
+          <DataTable rows={consultancies} />
+        ) : (
+          "Loading..."
+        ),
+    },
+    {
+      label: "Consultants",
+      content:
+        consultants.length > 0 ? (
+          <DataTable rows={consultants} />
+        ) : (
+          "Loading..."
+        ),
+    },
+  ];
+
+  return (
+    <>
+      <Box
+        sx={{
+          justifyContent: "center",
+        }}
+      >
+        <TabsPage tabs={tabs} />
       </Box>
     </>
   );
